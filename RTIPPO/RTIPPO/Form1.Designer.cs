@@ -43,6 +43,11 @@ namespace RTIPPO
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateFrom = new System.Windows.Forms.DateTimePicker();
+            this.dateBeafor = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.AboutMissing.SuspendLayout();
             this.AboutFinding.SuspendLayout();
@@ -198,11 +203,62 @@ namespace RTIPPO
             this.comboBox1.Size = new System.Drawing.Size(238, 24);
             this.comboBox1.TabIndex = 11;
             // 
+            // dateFrom
+            // 
+            this.dateFrom.Location = new System.Drawing.Point(616, 310);
+            this.dateFrom.Name = "dateFrom";
+            this.dateFrom.Size = new System.Drawing.Size(143, 22);
+            this.dateFrom.TabIndex = 12;
+            this.dateFrom.ValueChanged += new System.EventHandler(this.dateFrom_ValueChanged);
+            // 
+            // dateBeafor
+            // 
+            this.dateBeafor.Location = new System.Drawing.Point(616, 352);
+            this.dateBeafor.Name = "dateBeafor";
+            this.dateBeafor.Size = new System.Drawing.Size(143, 22);
+            this.dateBeafor.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(556, 313);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 18);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "От";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(556, 352);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 18);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "До";
+            // 
+            // buttonSubmit
+            // 
+            this.buttonSubmit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonSubmit.Location = new System.Drawing.Point(557, 403);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(238, 31);
+            this.buttonSubmit.TabIndex = 16;
+            this.buttonSubmit.Text = "Применить";
+            this.buttonSubmit.UseVisualStyleBackColor = false;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
+            // 
             // BulletinBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(817, 470);
+            this.Controls.Add(this.buttonSubmit);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dateBeafor);
+            this.Controls.Add(this.dateFrom);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -242,6 +298,11 @@ namespace RTIPPO
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker dateFrom;
+        private System.Windows.Forms.DateTimePicker dateBeafor;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button buttonSubmit;
     }
 }
 

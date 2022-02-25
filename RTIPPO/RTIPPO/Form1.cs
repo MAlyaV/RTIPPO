@@ -36,5 +36,15 @@ namespace RTIPPO
         {
 
         }
+
+        private void dateFrom_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine('d');
+        }
     }
 }
